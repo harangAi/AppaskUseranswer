@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/page_question"
+        android:enabled="true"
+        android:icon="@drawable/chat"
+        android:title="오늘의 질문" />
+
+    <item
+        android:id="@+id/page_list"
+        android:enabled="true"
+        android:icon="@drawable/list"
+        android:title="질문기록" />
+
+    <item
+        android:id="@+id/page_setting"
+        android:enabled="true"
+        android:icon="@drawable/setting"
+        android:title="설정" />
+
+</menu>
