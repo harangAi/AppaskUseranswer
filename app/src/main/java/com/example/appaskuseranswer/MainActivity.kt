@@ -37,9 +37,9 @@ class MainActivity : AppCompatActivity() , BottomNavigationView.OnNavigationItem
                  return true
              }
          }
-         var detailViewFragment = DetailViewFragment()
-         supportFragmentManager.beginTransaction()
-             .replace(R.id.container, detailViewFragment).commit()
+        var questionFragment = QuestionFragment()
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.container, questionFragment).commit()
          return false
      }
 
