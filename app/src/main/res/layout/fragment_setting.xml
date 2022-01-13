@@ -1,30 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/setting_container"
-    android:background="#44558F"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:background="#44558F"
+    android:orientation="vertical"
+    >
+
+    <!--  상단 여백      -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+    </LinearLayout>
+
+    <!-- 어문유답   -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:src="@drawable/test_title">
+    </ImageView>
+
+    <!--  공지사항, 알림, 새로운 질문, 앱 평가  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="470dp">
 
 
-    <fragment
-        android:name="com.example.appaskuseranswer.navigation.SettingFragment"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:id="@+id/setting_notice"
 
-        />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </LinearLayout>
 
-    <fragment
-        android:name="com.example.appaskuseranswer.navigation.SettingFragment"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:id="@+id/setting_al"
 
-        />
 
+
+
+   
 
 
 </LinearLayout>
