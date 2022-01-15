@@ -3,11 +3,9 @@ package com.example.appaskuseranswer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import com.example.appaskuseranswer.navigation.DetailViewFragment
 import com.example.appaskuseranswer.navigation.ListFragment
 import com.example.appaskuseranswer.navigation.QuestionFragment
 import com.example.appaskuseranswer.navigation.SettingFragment
-import com.example.appaskuseranswer.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -37,9 +35,11 @@ class MainActivity : AppCompatActivity() , BottomNavigationView.OnNavigationItem
                  return true
              }
          }
-         var detailViewFragment = DetailViewFragment()
-         supportFragmentManager.beginTransaction()
-             .replace(R.id.container, detailViewFragment).commit()
+        /*setContentView(R.layout.activity_main)
+        bottom_navi.setOnNavigationItemSelectedListener(this)*/
+        var questionFragment = QuestionFragment()
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.container, questionFragment).commit()
          return false
      }
 
@@ -48,8 +48,7 @@ class MainActivity : AppCompatActivity() , BottomNavigationView.OnNavigationItem
          setContentView(R.layout.activity_main)
          bottom_navi.setOnNavigationItemSelectedListener(this)
 
-     }
 
 
-
+         }
 }//

@@ -4,15 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
 
-    </FrameLayout>
-
+    <!--  BottomNavigation 하단  -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navi"
         android:layout_width="match_parent"
@@ -22,6 +18,24 @@
         app:itemIconTint="@drawable/selector_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_navigation_main"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        app:labelVisibilityMode="labeled" />
+
+    <!--  container 영역  -->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:background="#44558F"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </FrameLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
