@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_dialog_borderline"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 공지사항 날짜   -->
+            <TextView
+                android:id="@+id/Setting_Notice_Dialog_Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:text="2021년 1월 1일"
+                android:textAlignment="textStart"
+                android:textColor="#B8B8B8"
+                android:textSize="14sp" />
+
+            <!-- 공지사항 제목   -->
+            <TextView
+                android:id="@+id/Setting_Notice_Dialog_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="공지사항 (ver. 1.1)"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- 공지사항 내용   -->
+            <TextView
+                android:id="@+id/Setting_Notice_Dialog_Contents"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Keep the description short and
+         informative."
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 확인   -->
+        <TextView
+            android:id="@+id/Setting_Notice_Dialog_Ok_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_dialog_borderline"
+            android:gravity="center"
+            android:paddingVertical="16dp"
+            android:text="확인"
+            android:textColor="#44558F"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
