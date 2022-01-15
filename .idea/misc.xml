@@ -3,10 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2515625" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2515625" />
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/selector_button.xml" value="0.1" />
-        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/setting_borderline.xml" value="0.1" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/setting_btn_icon_drawable.xml" value="0.1" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/setting_btn_icon_shape.xml" value="0.1" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/setting_icon.xml" value="0.2515625" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/setting_icon_background.xml" value="0.1" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/setting_icon_drawable.xml" value="0.1" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/layout/fragment_question.xml" value="0.23541666666666666" />
-        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/layout/fragment_setting.xml" value="0.2" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/layout/fragment_setting.xml" value="0.264" />
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/menu/bottom_navigation_main.xml" value="0.11018518518518519" />
         <entry key="..\:/haetbit/GitHub/AppaskUseranswer/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/haetbit/GitHub/AppaskUseranswer/app/src/main/res/layout/activity_splash.xml" value="0.1" />

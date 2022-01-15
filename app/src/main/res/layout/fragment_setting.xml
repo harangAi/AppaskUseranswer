@@ -6,31 +6,202 @@
     android:orientation="vertical"
     >
 
-
-
         <!--  상단 여백      -->
         <LinearLayout
-            android:layout_weight="0.2"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:layout_height="75dp">
         </LinearLayout>
 
         <!-- 어문유답   -->
         <ImageView
-            android:layout_weight="0.3"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_height="100dp"
             android:src="@drawable/test_title">
         </ImageView>
 
         <!--  공지사항, 알림, 새로운 질문, 앱 평가  -->
         <LinearLayout
+            android:layout_marginRight="40dp"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="470dp"
+            android:orientation="vertical">
 
 
+                <!--     여백           -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1">
+                </LinearLayout>
 
+                <!--     공지사항           -->
+                <LinearLayout
+                    android:id="@+id/setting_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.16">
+
+                        <LinearLayout
+
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="55dp"
+                            android:background="@drawable/setting_borderline">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="15dp"
+                                    android:src="@drawable/user" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:text="공지사항"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#FDDF68"
+                                    android:textSize="11pt" />
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <!--     알림설정           -->
+                <LinearLayout
+                    android:id="@+id/setting_alarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.16">
+
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="55dp"
+                            android:background="@drawable/setting_borderline">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="15dp"
+                                    android:src="@drawable/notification" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:text="알림설정"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#FDDF68"
+                                    android:textSize="11pt" />
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <!--     원하는 질문 의뢰하기           -->
+                <LinearLayout
+                    android:id="@+id/setting_request"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.16"
+                    >
+
+                        <LinearLayout
+                            android:background="@drawable/setting_borderline"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="55dp"
+                            android:layout_gravity="center" >
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:src="@drawable/earth_grid"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="원하는 질문 의뢰하기"
+                                    android:textAlignment="textStart"
+                                    android:textSize="11pt"
+                                    android:textColor="#FDDF68"
+                                    android:layout_marginTop="20dp"
+                                    />
+
+                        </LinearLayout>
+                </LinearLayout>
+
+                <!--     앱 평가하기           -->
+                <LinearLayout
+                    android:id="@+id/setting_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.16"
+                    >
+
+                        <LinearLayout
+                            android:background="@drawable/setting_borderline"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="55dp"
+                            android:layout_gravity="center" >
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:src="@drawable/heart"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="앱 평가하기"
+                                    android:textAlignment="textStart"
+                                    android:textSize="11pt"
+                                    android:textColor="#FDDF68"
+                                    android:layout_marginTop="20dp"
+                                    />
+
+                        </LinearLayout>
+                </LinearLayout>
+
+                <!--     여백           -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.16">
+                        <LinearLayout
+                            android:background="@drawable/setting_borderline"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="55dp"
+                            android:layout_gravity="center" >
+                        </LinearLayout>
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--  하단 크기 가정    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         </LinearLayout>
 
 
@@ -38,8 +209,6 @@
 
 
 
-
-   
 
 
 </LinearLayout>
