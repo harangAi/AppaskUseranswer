@@ -50,6 +50,10 @@ class MainActivity : AppCompatActivity() , BottomNavigationView.OnNavigationItem
 
 
 
+
+
+
+
      }
 
 

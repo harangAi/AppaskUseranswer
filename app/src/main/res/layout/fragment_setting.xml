@@ -6,32 +6,34 @@
     android:orientation="vertical"
     >
 
-    <!--  상단 여백      -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="75dp">
-    </LinearLayout>
-
-    <!-- 어문유답   -->
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="130dp"
-        android:src="@drawable/test_title">
-    </ImageView>
-
-    <!--  공지사항, 알림, 새로운 질문, 앱 평가  -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="470dp">
 
 
+        <!--  상단 여백      -->
+        <LinearLayout
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </LinearLayout>
 
-    </LinearLayout>
-    
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </LinearLayout>
+        <!-- 어문유답   -->
+        <ImageView
+            android:layout_weight="0.3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/test_title">
+        </ImageView>
+
+        <!--  공지사항, 알림, 새로운 질문, 앱 평가  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+
+        </LinearLayout>
+
+
 
 
 
