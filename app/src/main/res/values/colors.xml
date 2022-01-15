@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--    <color name="bgColor">#222b4a</color>-->
     <color name="bgColor">#44558f</color>
     <color name="alertColor">#ffe495</color>
 

@@ -9,7 +9,7 @@ import com.example.appaskuseranswer.navigation.QuestionFragment
 import com.example.appaskuseranswer.navigation.SettingFragment
 import com.example.appaskuseranswer.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlinx.android.synthetic.main.activity_main.*
+//import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() , BottomNavigationView.OnNavigationItemSelectedListener{
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() , BottomNavigationView.OnNavigationItem
      override fun onCreate(savedInstanceState: Bundle?) {
          super.onCreate(savedInstanceState)
          setContentView(R.layout.activity_main)
-         bottom_navi.setOnNavigationItemSelectedListener(this)
+//         bottom_navi.setOnNavigationItemSelectedListener(this)
 
      }
 
