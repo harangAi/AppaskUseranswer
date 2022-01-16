@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnswerActivity"
+    android:background="@color/bgColor">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="25dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_today"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:text="2022년 1월 10일 월요일"
+                android:textColor="@color/overlay_light_80"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_weight="5" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:background="none"
+                android:text="완료"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/overlay_light_80"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingVertical="5dp"
+            android:text="기억 속 가장 추웠던 날은 언제인가요?"
+            android:textAlignment="center"
+            android:textColor="@color/alertColor"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_answer"
+            android:ems="10"
+            android:lines="20"
+            android:gravity="top"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:text="텍스트 예시 내 기억 속 가장 추웠던 날은 겨울이 막 시작되는 시기였던 날이다. 칼바람이 매섭게 불어오는데 두꺼운 옷차림이 아니었던 나는 속수무책으로 바람을 맞을 수 밖에 없었다. 그 날은 내 기억 속에 강하게 남아서 이제는 겨울의 초입에 가까워지면 목도리 하나쯤은 가방 속에 꼭 넣고 다니는 편이다."
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
