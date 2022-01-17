@@ -3,6 +3,7 @@
 <!--    <color name="bgColor">#222b4a</color>-->
     <color name="bgColor">#44558f</color>
     <color name="alertColor">#ffe495</color>
+    <color name="transparent">#00ff0000</color>
 
     <color name="mainColor">#d7e9fa</color>
     <color name="black">#FF000000</color>
