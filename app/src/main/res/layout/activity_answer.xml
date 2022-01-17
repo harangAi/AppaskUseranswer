@@ -37,7 +37,7 @@
                 android:id="@+id/button"
                 android:layout_width="0dp"
                 android:layout_height="20dp"
-                android:background="none"
+                android:background="@color/transparent"
                 android:text="완료"
                 android:textAlignment="viewEnd"
                 android:textColor="@color/overlay_light_80"
