@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#44558F"
+    android:background="#44558f"
     android:orientation="vertical"
     >
 
@@ -36,74 +36,50 @@
 
                 <!--     공지사항           -->
                 <LinearLayout
-                    android:id="@+id/setting_notice"
+                    android:id="@+id/notice"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="0.16">
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal"
+                    >
 
-                        <LinearLayout
-
-                            android:layout_width="300dp"
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_marginLeft="40dp"
+                            android:drawablePadding="20dp"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="55dp"
-                            android:background="@drawable/setting_borderline">
-
-                                <ImageView
-                                    android:layout_width="35dp"
-                                    android:layout_height="55dp"
-                                    android:layout_marginLeft="0dp"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_marginRight="15dp"
-                                    android:src="@drawable/user" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="20dp"
-                                    android:text="공지사항"
-                                    android:textAlignment="textStart"
-                                    android:textColor="#FDDF68"
-                                    android:textSize="11pt" />
-
-                        </LinearLayout>
+                            android:background="@drawable/setting_borderline"
+                            android:drawableStart="@drawable/ic_setting_article"
+                            android:text="공지사항"
+                            android:textAlignment="viewStart"
+                            android:textColor="#ffe495"
+                            android:textSize="11pt"
+                            style="?android:attr/borderlessButtonStyle"
+                            />
 
 
                 </LinearLayout>
-
 
                 <!--     알림설정           -->
                 <LinearLayout
                     android:id="@+id/setting_alarm"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="0.16">
+                    android:layout_weight="0.1">
 
-                        <LinearLayout
-                            android:layout_width="300dp"
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_marginLeft="40dp"
+                            android:drawablePadding="20dp"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="55dp"
-                            android:background="@drawable/setting_borderline">
-
-                                <ImageView
-                                    android:layout_width="35dp"
-                                    android:layout_height="55dp"
-                                    android:layout_marginLeft="0dp"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_marginRight="15dp"
-                                    android:src="@drawable/notification" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="20dp"
-                                    android:text="알림설정"
-                                    android:textAlignment="textStart"
-                                    android:textColor="#FDDF68"
-                                    android:textSize="11pt" />
-
-                        </LinearLayout>
+                            android:background="@drawable/setting_borderline"
+                            android:drawableStart="@drawable/ic_setting_alarm"
+                            android:text="알림설정"
+                            android:textAlignment="viewStart"
+                            android:textColor="#ffe495"
+                            android:textSize="11pt"
+                            style="?android:attr/borderlessButtonStyle"
+                            />
 
 
                 </LinearLayout>
@@ -114,35 +90,22 @@
                     android:id="@+id/setting_request"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="0.16"
+                    android:layout_weight="0.1"
                     >
 
-                        <LinearLayout
-                            android:background="@drawable/setting_borderline"
-                            android:layout_width="300dp"
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_marginLeft="40dp"
+                            android:drawablePadding="20dp"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="55dp"
-                            android:layout_gravity="center" >
-
-                                <ImageView
-                                    android:layout_width="35dp"
-                                    android:layout_height="55dp"
-                                    android:layout_marginLeft="0dp"
-                                    android:layout_marginRight="15dp"
-                                    android:layout_marginTop="10dp"
-                                    android:src="@drawable/earth_grid"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="원하는 질문 의뢰하기"
-                                    android:textAlignment="textStart"
-                                    android:textSize="11pt"
-                                    android:textColor="#FDDF68"
-                                    android:layout_marginTop="20dp"
-                                    />
-
-                        </LinearLayout>
+                            android:background="@drawable/setting_borderline"
+                            android:drawableStart="@drawable/ic_setting_request1"
+                            android:text="원하는 질문 의뢰하기"
+                            android:textAlignment="viewStart"
+                            android:textColor="#ffe495"
+                            android:textSize="11pt"
+                            style="?android:attr/borderlessButtonStyle"
+                            />
                 </LinearLayout>
 
                 <!--     앱 평가하기           -->
@@ -150,35 +113,22 @@
                     android:id="@+id/setting_rating"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="0.16"
+                    android:layout_weight="0.1"
                     >
 
-                        <LinearLayout
-                            android:background="@drawable/setting_borderline"
-                            android:layout_width="300dp"
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_marginLeft="40dp"
+                            android:drawablePadding="20dp"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="55dp"
-                            android:layout_gravity="center" >
-
-                                <ImageView
-                                    android:layout_width="35dp"
-                                    android:layout_height="55dp"
-                                    android:layout_marginLeft="0dp"
-                                    android:layout_marginRight="15dp"
-                                    android:layout_marginTop="10dp"
-                                    android:src="@drawable/heart"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="앱 평가하기"
-                                    android:textAlignment="textStart"
-                                    android:textSize="11pt"
-                                    android:textColor="#FDDF68"
-                                    android:layout_marginTop="20dp"
-                                    />
-
-                        </LinearLayout>
+                            android:background="@drawable/setting_borderline"
+                            android:drawableStart="@drawable/ic_setting_heart"
+                            android:text="앱 평가하기"
+                            android:textAlignment="viewStart"
+                            android:textColor="#ffe495"
+                            android:textSize="11pt"
+                            style="?android:attr/borderlessButtonStyle"
+                            />
                 </LinearLayout>
 
                 <!--     여백           -->
@@ -187,10 +137,10 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.16">
                         <LinearLayout
+                            android:layout_marginLeft="40dp"
                             android:background="@drawable/setting_borderline"
-                            android:layout_width="300dp"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="55dp"
                             android:layout_gravity="center" >
                         </LinearLayout>
                 </LinearLayout>
