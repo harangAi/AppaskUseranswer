@@ -21,6 +21,7 @@
 
         <!--  공지사항, 알림, 새로운 질문, 앱 평가  -->
         <LinearLayout
+            android:id="@+id/setting_container"
             android:layout_marginRight="40dp"
             android:layout_width="match_parent"
             android:layout_height="470dp"
@@ -36,7 +37,6 @@
 
                 <!--     공지사항           -->
                 <LinearLayout
-                    android:id="@+id/notice"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="0.1"
@@ -44,6 +44,8 @@
                     >
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:focusable="true"
+                            android:id="@+id/btn_setting_notice"
                             android:layout_marginLeft="40dp"
                             android:drawablePadding="20dp"
                             android:layout_width="match_parent"
@@ -62,12 +64,12 @@
 
                 <!--     알림설정           -->
                 <LinearLayout
-                    android:id="@+id/setting_alarm"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="0.1">
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_setting_alarm"
                             android:layout_marginLeft="40dp"
                             android:drawablePadding="20dp"
                             android:layout_width="match_parent"
@@ -87,13 +89,13 @@
 
                 <!--     원하는 질문 의뢰하기           -->
                 <LinearLayout
-                    android:id="@+id/setting_request"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="0.1"
                     >
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_setting_request"
                             android:layout_marginLeft="40dp"
                             android:drawablePadding="20dp"
                             android:layout_width="match_parent"
@@ -110,13 +112,13 @@
 
                 <!--     앱 평가하기           -->
                 <LinearLayout
-                    android:id="@+id/setting_rating"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="0.1"
                     >
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_setting_rating"
                             android:layout_marginLeft="40dp"
                             android:drawablePadding="20dp"
                             android:layout_width="match_parent"

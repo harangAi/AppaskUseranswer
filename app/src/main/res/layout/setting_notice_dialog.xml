@@ -13,12 +13,13 @@
 
 
         <LinearLayout
+            android:id="@+id/setting_notice_dialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <!-- 공지사항 날짜   -->
             <TextView
-                android:id="@+id/Setting_Notice_Dialog_Date"
+                android:id="@+id/setting_notice_dialog_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -31,7 +32,7 @@
 
             <!-- 공지사항 제목   -->
             <TextView
-                android:id="@+id/Setting_Notice_Dialog_Title"
+                android:id="@+id/setting_notice_dialog_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -45,7 +46,7 @@
 
             <!-- 공지사항 내용   -->
             <TextView
-                android:id="@+id/Setting_Notice_Dialog_Contents"
+                android:id="@+id/setting_notice_dialog_contents"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_marginLeft="16dp"
@@ -60,7 +61,7 @@
 
         <!-- 확인   -->
         <TextView
-            android:id="@+id/Setting_Notice_Dialog_Ok_Btn"
+            android:id="@+id/setting_notice_dialog_ok_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/setting_dialog_borderline"
