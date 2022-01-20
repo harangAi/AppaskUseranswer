@@ -40,7 +40,7 @@ class SettingFragment : DialogFragment() {
         view.findViewById<Button>(R.id.btn_setting_notice).setOnClickListener {
             val dialog = CustomDialog()
             dialog.show(
-                childFragmentManager, "custom"
+                parentFragmentManager, "custom"
             )
         }
     }
