@@ -25,15 +25,25 @@ class CustomDialog: DialogFragment() {
     ): View? {
         _binding = SettingNoticeDialogBinding.inflate(inflater, container, false)
         val view = binding.root
+
+        ///공지사항 확인 버튼(setting_notice_dialog_ok_btn) 누르면 팝업 종료
+        view.findViewById<Button>(R.id.setting_notice_dialog_ok_btn).setOnClickListener {
+            super.onDestroyView()
+            _binding = null
+        }
+
         return view
+
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+
     }
 
 
+    }////
 
 
-}//
+

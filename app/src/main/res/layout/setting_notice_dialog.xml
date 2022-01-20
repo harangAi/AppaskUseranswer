@@ -41,26 +41,27 @@
                 android:layout_marginBottom="16dp"
                 android:text="공지사항 (ver. 1.1)"
                 android:textAlignment="textStart"
-                android:textSize="20sp"
+                android:textSize="17sp"
+                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <!-- 공지사항 내용   -->
             <TextView
                 android:id="@+id/setting_notice_dialog_contents"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="150dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
-                android:text="Keep the description short and
-         informative."
+                android:text="Keep the description short and informative."
                 android:textAlignment="textStart"
-                android:textSize="20sp"
+                android:textSize="19sp"
+                android:textColor="@color/black"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <!-- 확인   -->
-        <TextView
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/setting_notice_dialog_ok_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,7 +71,9 @@
             android:text="확인"
             android:textColor="#44558F"
             android:textSize="16dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:focusable="true"
+            />
 
     </LinearLayout>
 

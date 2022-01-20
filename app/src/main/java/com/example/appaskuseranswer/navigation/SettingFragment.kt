@@ -37,6 +37,7 @@ class SettingFragment : DialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //목록에서 공지사항버튼(btn_setting_notice)을 누르면 팝업
         view.findViewById<Button>(R.id.btn_setting_notice).setOnClickListener {
             val dialog = CustomDialog()
             dialog.show(
