@@ -5,21 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.DialogFragment
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import com.example.appaskuseranswer.CustomDialog
+import com.example.appaskuseranswer.NoticeDialog
 import com.example.appaskuseranswer.R
-import com.example.appaskuseranswer.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_setting.*
-import kotlinx.android.synthetic.main.setting_notice_dialog.*
+import com.example.appaskuseranswer.RequestDialog
 
 
 class SettingFragment : DialogFragment() {
 
-    private val dialog = CustomDialog()
+    private val dialog = NoticeDialog()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -39,15 +33,25 @@ class SettingFragment : DialogFragment() {
 
         //목록에서 공지사항버튼(btn_setting_notice)을 누르면 팝업
         view.findViewById<Button>(R.id.btn_setting_notice).setOnClickListener {
-            val dialog = CustomDialog()
-            dialog.show(
-                parentFragmentManager, "custom"
+            val noticeDialog = NoticeDialog()
+            noticeDialog.show(
+                parentFragmentManager, "Notice"
             )
         }
+
+        //목록에서 원하는 질물 의뢰하기 버튼(btn_setting_request)을 누르면 팝업
+        view.findViewById<Button>(R.id.btn_setting_request).setOnClickListener {
+            val requestDialog = RequestDialog()
+            requestDialog.show(
+                parentFragmentManager, "Request"
+            )
+        }
+
+
+
     }
 
-
-        }//
+        }////
 
 
 

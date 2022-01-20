@@ -69,6 +69,7 @@
                     android:layout_weight="0.1">
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:focusable="true"
                             android:id="@+id/btn_setting_alarm"
                             android:layout_marginLeft="40dp"
                             android:drawablePadding="20dp"
@@ -95,6 +96,7 @@
                     >
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:focusable="true"
                             android:id="@+id/btn_setting_request"
                             android:layout_marginLeft="40dp"
                             android:drawablePadding="20dp"
@@ -118,6 +120,7 @@
                     >
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:focusable="true"
                             android:id="@+id/btn_setting_rating"
                             android:layout_marginLeft="40dp"
                             android:drawablePadding="20dp"

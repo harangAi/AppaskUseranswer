@@ -1,18 +1,15 @@
 package com.example.appaskuseranswer
 
-import android.app.Dialog
-import android.content.Context
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.Window
 import android.widget.Button
 import androidx.fragment.app.DialogFragment
-import com.example.appaskuseranswer.databinding.ActivityMainBinding
 import com.example.appaskuseranswer.databinding.SettingNoticeDialogBinding
 
-class CustomDialog: DialogFragment() {
+class NoticeDialog: DialogFragment() {
 
     private var _binding: SettingNoticeDialogBinding? = null
 
