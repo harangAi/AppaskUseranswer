@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_dialog_borderline"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/setting_dialog_borderline"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/setting_notice_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <!-- 오전   -->
+        <ToggleButton
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:text=""
+            android:textOff="오전"
+            android:textOn="오전"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:focusable="true"
+            />
+
+        <!-- 오후   -->
+            <ToggleButton
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="16dp"
+                android:text=""
+                android:textOff="오후"
+                android:textOn="오후"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:focusable="true"
+                />
+
+        <!-- 저녁   -->
+            <ToggleButton
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="16dp"
+                android:text=""
+                android:textOff="저녁"
+                android:textOn="저녁"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:focusable="true"
+                />
+
+        <!-- 심야   -->
+            <ToggleButton
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="16dp"
+                android:text=""
+                android:textOff="심야"
+                android:textOn="심야"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:focusable="true"
+                />
+
+        <!-- 확인   -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/setting_notice_dialog_ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_dialog_borderline"
+            android:gravity="center"
+            android:paddingVertical="16dp"
+            android:text="확인"
+            android:textColor="#44558F"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:focusable="true"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

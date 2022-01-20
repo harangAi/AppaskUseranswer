@@ -1,4 +1,4 @@
-package com.example.appaskuseranswer
+package com.example.appaskuseranswer.dialog
 
 
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.DialogFragment
+import com.example.appaskuseranswer.R
 import com.example.appaskuseranswer.databinding.SettingRequestDialogBinding
 
 class RequestDialog: DialogFragment() {

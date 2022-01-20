@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.DialogFragment
-import com.example.appaskuseranswer.NoticeDialog
+import com.example.appaskuseranswer.dialog.NoticeDialog
 import com.example.appaskuseranswer.R
-import com.example.appaskuseranswer.RequestDialog
+import com.example.appaskuseranswer.dialog.RequestDialog
 
 
 class SettingFragment : DialogFragment() {
