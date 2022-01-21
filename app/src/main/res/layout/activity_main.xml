@@ -8,6 +8,7 @@
     >
 
 
+
     <!--  BottomNavigation 하단  -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navi"
@@ -35,7 +36,6 @@
         app:layout_constraintTop_toTopOf="parent" >
 
     </FrameLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
