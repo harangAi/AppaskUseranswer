@@ -4,6 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2515625" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/alarm_dialog_swich_track_selector.xml" value="0.1574074074074074" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/alarm_dialog_switch_thumb.xml" value="0.2515625" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/alarm_dialog_switch_thumbf.xml" value="0.1" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/alarm_dialog_switch_track_off.xml" value="0.1" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/alarm_dialog_switch_track_on.xml" value="0.1" />
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2515625" />
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/ic_setting_alarm.xml" value="0.21944444444444444" />
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/ic_setting_article.xml" value="0.21944444444444444" />
@@ -26,10 +31,11 @@
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/setting_request_cancel_btn.xml" value="0.175" />
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/setting_request_edittext_borderline.xml" value="0.2515625" />
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/setting_request_submitBtn_borderline.xml" value="0.2515625" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/drawable/setting_request_submit_btn.xml" value="0.2515625" />
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/layout/fragment_question.xml" value="0.23541666666666666" />
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/layout/fragment_setting.xml" value="0.2" />
-        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/layout/setting_alarm_dialog.xml" value="0.4" />
+        <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/layout/setting_alarm_dialog.xml" value="0.3449074074074074" />
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/layout/setting_notice_dialog.xml" value="0.264" />
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/layout/setting_request_dialog.xml" value="0.4929214929214929" />
         <entry key="..\:/haetbit/AppaskUseranswer/app/src/main/res/menu/bottom_navigation_main.xml" value="0.11018518518518519" />

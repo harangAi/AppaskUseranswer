@@ -8,6 +8,7 @@ import android.widget.Button
 import androidx.fragment.app.DialogFragment
 import com.example.appaskuseranswer.dialog.NoticeDialog
 import com.example.appaskuseranswer.R
+import com.example.appaskuseranswer.dialog.AlarmDialog
 import com.example.appaskuseranswer.dialog.RequestDialog
 
 
@@ -39,7 +40,7 @@ class SettingFragment : DialogFragment() {
             )
         }
 
-        //목록에서 원하는 질물 의뢰하기 버튼(btn_setting_request)을 누르면 팝업
+        //목록에서 원하는 질문 의뢰하기 버튼(btn_setting_request)을 누르면 팝업
         view.findViewById<Button>(R.id.btn_setting_request).setOnClickListener {
             val requestDialog = RequestDialog()
             requestDialog.show(
@@ -47,6 +48,13 @@ class SettingFragment : DialogFragment() {
             )
         }
 
+        //목록에서 알림설정 버튼(btn_setting_alarm)을 누르면 팝업
+        view.findViewById<Button>(R.id.btn_setting_alarm).setOnClickListener {
+            val alarmDialog = AlarmDialog()
+            alarmDialog.show(
+                parentFragmentManager, "Alarm"
+            )
+        }
 
 
     }
