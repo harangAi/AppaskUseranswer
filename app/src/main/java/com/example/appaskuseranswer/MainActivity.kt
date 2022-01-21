@@ -2,13 +2,12 @@ package com.example.appaskuseranswer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import com.example.appaskuseranswer.navigation.ListFragment
 import com.example.appaskuseranswer.navigation.QuestionFragment
 import com.example.appaskuseranswer.navigation.SettingFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlinx.android.synthetic.main.activity_main.*
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -26,21 +25,21 @@ class MainActivity : AppCompatActivity() {
 
         bnv_main.run { setOnNavigationItemSelectedListener {
             when(it.itemId) {
-                R.id.page_question -> {
+                R.id.page_question -> { //오늘의 질문
                     var questionFragment = QuestionFragment()
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.container, questionFragment).commit()
 
                 }
 
-                R.id.page_list -> {
+                R.id.page_list -> { //질문기록
                     var listFragment = ListFragment()
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.container, listFragment).commit()
 
                 }
 
-                R.id.page_setting -> {
+                R.id.page_setting -> { //설정
                     var settingFragment = SettingFragment()
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.container, settingFragment).commit()
@@ -52,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        selectedItemId = R.id.page_question
+        selectedItemId = R.id.page_question //오늘의 질문
 
         }
 
