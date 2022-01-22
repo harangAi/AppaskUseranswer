@@ -3,9 +3,9 @@ package com.example.appaskuseranswer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.example.appaskuseranswer.navigation.ListFragment
-import com.example.appaskuseranswer.navigation.QuestionFragment
-import com.example.appaskuseranswer.navigation.SettingFragment
+import com.example.appaskuseranswer.fragment.ListFragment
+import com.example.appaskuseranswer.fragment.QuestionFragment
+import com.example.appaskuseranswer.fragment.SettingFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 

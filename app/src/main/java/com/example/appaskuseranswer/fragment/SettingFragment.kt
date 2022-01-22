@@ -1,4 +1,4 @@
-package com.example.appaskuseranswer.navigation
+package com.example.appaskuseranswer.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.DialogFragment
+import androidx.room.Room
 import com.example.appaskuseranswer.dialog.NoticeDialog
 import com.example.appaskuseranswer.R
+import com.example.appaskuseranswer.db.NoticeDatabase
 import com.example.appaskuseranswer.dialog.AlarmDialog
 import com.example.appaskuseranswer.dialog.RequestDialog
 
