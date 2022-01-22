@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt' // dataBinding 추가
 
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -75,5 +76,12 @@ dependencies {
     //추가
     testImplementation "com.google.truth:truth:0.40"
     kapt "org.xerial:sqlite-jdbc:3.34.0"
+
+    def lifecycle_version = "2.3.0"
+    // ViewModel - 라이프 사이클
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData - 데이터의 변경 사항을 알 수 있음
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
 
 }

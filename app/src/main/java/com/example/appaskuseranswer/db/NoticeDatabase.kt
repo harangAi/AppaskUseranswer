@@ -22,8 +22,13 @@ abstract class  NoticeDatabase : RoomDatabase() {
     abstract fun noticeDao() : NoticeDao
 
     companion object {  //어디서든 접근할 수 있게 compain object를 이용해서 싱글톤 패턴으로 만들어준다.
+
+        /* @Volatile = 접근가능한 변수의 값을 cache를 통해 사용하지 않고
+        thread가 직접 main memory에 접근 하게하여 동기화. */
+        @Volatile
         private var instance : NoticeDatabase? = null
 
+        // 싱글톤으로 생성 (자주 생성 시 성능 손해). 이미 존재할 경우 생성하지 않고 바로 반환
         @Synchronized
         fun getInstance(context: Context) : NoticeDatabase? {
             if (instance == null) {
@@ -31,8 +36,7 @@ abstract class  NoticeDatabase : RoomDatabase() {
                     instance = Room.databaseBuilder(
                         context.applicationContext,
                         NoticeDatabase::class.java,"notice_database"
-                    )
-                        .build()
+                    ).build()
                 }
             }
             return instance

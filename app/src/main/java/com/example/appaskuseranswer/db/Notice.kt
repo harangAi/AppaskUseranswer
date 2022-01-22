@@ -4,10 +4,10 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-private const val TABLE_NAME = "notice"
+
 
 //공지사항 테이블 생성
-@Entity(tableName = TABLE_NAME)
+@Entity(tableName = "notice")
 data class Notice(
     @ColumnInfo(name = "title") val title: String,
     @ColumnInfo(name = "content") val content: String,

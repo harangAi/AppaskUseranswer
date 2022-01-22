@@ -1,6 +1,7 @@
 package com.example.appaskuseranswer
 
 import android.content.Context
+import android.util.Log
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -10,7 +11,6 @@ import com.example.appaskuseranswer.db.NoticeDatabase
 import kotlinx.coroutines.runBlocking
 import org.junit.After
 import com.google.common.truth.Truth.assertThat
-import com.google.common.truth.Truth.assertWithMessage;
 import org.junit.Test
 import org.junit.runner.RunWith
 
@@ -26,6 +26,7 @@ import java.util.*
  */
 @RunWith(AndroidJUnit4::class)
 class ExampleInstrumentedTest {
+
 
     private lateinit var noticeDao: NoticeDao
     private lateinit var db : NoticeDatabase
@@ -44,6 +45,7 @@ class ExampleInstrumentedTest {
         db.close()
     }
 
+
     @Test
     @Throws(Exception::class)
     fun writeNotice() = runBlocking {
@@ -52,8 +54,10 @@ class ExampleInstrumentedTest {
         val notices = noticeDao.getAll()
         assertThat(notices.contains(notice)).isTrue()
 
+        Log.v(notice.toString(), "테스트 로그")
 
     }
+
 
 
 
