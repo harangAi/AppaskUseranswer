@@ -72,4 +72,8 @@ dependencies {
     // Test helpers
     testImplementation "androidx.room:room-testing:$room_version"
 
+    //추가
+    testImplementation "com.google.truth:truth:0.40"
+    kapt "org.xerial:sqlite-jdbc:3.34.0"
+
 }
