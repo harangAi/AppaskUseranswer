@@ -23,6 +23,15 @@ android {
         }
     }
 
+    //뷰바인딩 선언
+    viewBinding { //gradle plugin 버전 3.6이상
+        enabled = true
+    }
+
+//    buildFeatures { //gradle plugin 버전 4.0이상
+//        viewBinding = true
+//    }
+
 }
 
 dependencies {

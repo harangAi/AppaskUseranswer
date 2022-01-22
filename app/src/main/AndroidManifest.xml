@@ -11,10 +11,8 @@
         android:theme="@style/Theme.appaskuseranswer">
         <activity
             android:name=".AnswerCompleteActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AnswerActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -26,9 +24,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".AnswerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
     </application>
 
 </manifest>
