@@ -1,16 +1,18 @@
 package com.example.appaskuseranswer
 
 import android.content.Context
+import android.nfc.Tag
 import android.util.Log
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.test.platform.app.InstrumentationRegistry
 import com.example.appaskuseranswer.db.Notice
 import com.example.appaskuseranswer.db.NoticeDao
 import com.example.appaskuseranswer.db.NoticeDatabase
 import kotlinx.coroutines.runBlocking
 import org.junit.After
-import com.google.common.truth.Truth.assertThat
+
 import org.junit.Test
 import org.junit.runner.RunWith
 
@@ -32,32 +34,35 @@ class ExampleInstrumentedTest {
     private lateinit var db : NoticeDatabase
 
     @Before
-    fun createDb() {
-        val context = ApplicationProvider.getApplicationContext<Context>()
+    fun setup() {
+        /*val context = ApplicationProvider.getApplicationContext<Context>()
         db = Room.inMemoryDatabaseBuilder(
             context, NoticeDatabase::class.java).build()
-        noticeDao = db.noticeDao()
+        noticeDao = db.noticeDao()*/
+
+        Log.i("TAG", "[BeforeTest] ")
+        val context : Context = ApplicationProvider.getApplicationContext()
+        val database = Room.inMemoryDatabaseBuilder(context, NoticeDatabase::class.java).build()
+        var taskDao = database.noticeDao()
+
+
     }
 
-    @After
+  /*  @After
     @Throws(IOException::class)
     fun closeDb() {
         db.close()
+    }*/
+
+
+    @Test
+    fun appContext() {
+        var appContext : Context = ApplicationProvider.getApplicationContext()
+
     }
 
 
     @Test
-    @Throws(Exception::class)
-    fun writeNotice() = runBlocking {
-        val notice = Notice("공지사항 테스트입니다.", "공지사항 내용 테스트", "2021_01_22")
-        noticeDao.insert(notice)
-        val notices = noticeDao.getAll()
-        assertThat(notices.contains(notice)).isTrue()
-
-        Log.v(notice.toString(), "테스트 로그")
-
-    }
-
 
 
 

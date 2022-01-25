@@ -14,5 +14,5 @@ data class Notice(
     @ColumnInfo(name = "date") var date: String
 ) {
     @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "n_num")val nNum : Int = 0 // PK를 자동으로 증가하는 인덱스 설정
+    @ColumnInfo(name = "n_num")var nNum : Int = 0 // PK를 자동으로 증가하는 인덱스 설정
 }
