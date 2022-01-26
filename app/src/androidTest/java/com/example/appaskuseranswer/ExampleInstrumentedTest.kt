@@ -3,6 +3,7 @@ package com.example.appaskuseranswer
 import android.content.Context
 import android.nfc.Tag
 import android.util.Log
+import androidx.lifecycle.LiveData
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -12,6 +13,7 @@ import com.example.appaskuseranswer.db.NoticeDao
 import com.example.appaskuseranswer.db.NoticeDatabase
 import kotlinx.coroutines.runBlocking
 import org.junit.After
+import org.junit.Assert
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -31,7 +33,7 @@ class ExampleInstrumentedTest {
 
 
     private lateinit var noticeDao: NoticeDao
-    private lateinit var db : NoticeDatabase
+    private lateinit var database : NoticeDatabase
 
     @Before
     fun setup() {
@@ -41,33 +43,30 @@ class ExampleInstrumentedTest {
         noticeDao = db.noticeDao()*/
 
         Log.i("TAG", "[BeforeTest] ")
-        val context : Context = ApplicationProvider.getApplicationContext()
-        val database = Room.inMemoryDatabaseBuilder(context, NoticeDatabase::class.java).build()
-        var taskDao = database.noticeDao()
+        database = Room.inMemoryDatabaseBuilder(InstrumentationRegistry
+            .getInstrumentation().context, NoticeDatabase::class.java).build()
 
 
     }
 
-  /*  @After
-    @Throws(IOException::class)
+    @After
     fun closeDb() {
-        db.close()
-    }*/
-
-
-    @Test
-    fun appContext() {
-        var appContext : Context = ApplicationProvider.getApplicationContext()
-
+        database.close()
     }
 
 
     @Test
+    fun insertTest() {
+
+
+    }
 
 
 
 
-}
+
+
+}////
 
 
 /*

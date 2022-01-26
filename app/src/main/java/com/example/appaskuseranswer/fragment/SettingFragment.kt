@@ -24,6 +24,8 @@ class SettingFragment : DialogFragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+
+
         var view = LayoutInflater.from(activity).inflate(R.layout.fragment_setting, container, false)
         return view
 
@@ -31,11 +33,12 @@ class SettingFragment : DialogFragment() {
 
     }
 
+
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
 
-        
         //목록에서 공지사항버튼(btn_setting_notice)을 누르면 팝업
         view.findViewById<Button>(R.id.btn_setting_notice).setOnClickListener {
             val noticeDialog = NoticeDialog()

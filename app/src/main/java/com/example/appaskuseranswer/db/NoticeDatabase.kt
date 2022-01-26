@@ -1,5 +1,6 @@
 package com.example.appaskuseranswer.db
 
+import android.app.Application
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
@@ -19,6 +20,7 @@ import androidx.room.TypeConverters
 * */
 
 abstract class  NoticeDatabase : RoomDatabase() {
+
     abstract fun noticeDao() : NoticeDao
 
     companion object {  //어디서든 접근할 수 있게 compain object를 이용해서 싱글톤 패턴으로 만들어준다.
@@ -41,6 +43,9 @@ abstract class  NoticeDatabase : RoomDatabase() {
             }
             return instance
         }
+
+
+
 
     }
 

@@ -4,6 +4,7 @@ package com.example.appaskuseranswer.db
 import android.app.Application
 import androidx.databinding.Bindable
 import androidx.lifecycle.*
+import androidx.room.Room
 import kotlinx.coroutines.launch
 
 
@@ -12,6 +13,11 @@ class NoticeViewModel(application: Application) :AndroidViewModel(application) {
 
     private val repository = NoticeRepository(application)
     private val notices = repository.getAll()
+
+    private val db = Room.databaseBuilder(
+        application,
+        NoticeDatabase::class.java, "notice_db"
+    ).build()
 
     fun getAll(): LiveData<List<Notice>> {
         return this.notices
@@ -23,8 +29,4 @@ class NoticeViewModel(application: Application) :AndroidViewModel(application) {
 
 
 
-
-
-
-
-}
+}////
