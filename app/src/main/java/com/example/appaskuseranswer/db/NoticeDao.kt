@@ -1,16 +1,17 @@
 package com.example.appaskuseranswer.db
 
 import androidx.lifecycle.LiveData
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.room.*
 
 @Dao //Data Access Object 데이터에 접근할 수 있는 메서드를 정의해놓은 인터페이스
 interface NoticeDao{
 
-    @Query("SELECT * FROM notice")
+    @Query("SELECT * FROM notice ORDER BY n_num DESC")
     fun getAll() : LiveData<List<Notice>>
+
+    @Query("SELECT * FROM notice WHERE n_num = :key")
+    fun get(key: Int) : Notice?
+
 
     /* @Query("SELECT * FROM notice WHERE n_num = :nNum")
      fun loadAllByIds(userIds: IntArray): List<Notice>*/

@@ -14,6 +14,7 @@ class NoticeViewModel(application: Application) :AndroidViewModel(application) {
     private val repository = NoticeRepository(application)
     private val notices = repository.getAll()
 
+
     private val db = Room.databaseBuilder(
         application,
         NoticeDatabase::class.java, "notice_db"

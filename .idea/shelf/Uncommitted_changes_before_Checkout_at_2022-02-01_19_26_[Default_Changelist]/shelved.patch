@@ -1,0 +1,19 @@
+Index: app/src/main/java/com/example/appaskuseranswer/fragment/SettingFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.appaskuseranswer.fragment\r\n\r\nimport android.os.Bundle\r\nimport android.view.LayoutInflater\r\nimport android.view.View\r\nimport android.view.ViewGroup\r\nimport android.widget.Button\r\nimport androidx.fragment.app.DialogFragment\r\nimport androidx.room.Room\r\nimport com.example.appaskuseranswer.dialog.NoticeDialog\r\nimport com.example.appaskuseranswer.R\r\nimport com.example.appaskuseranswer.db.NoticeDatabase\r\nimport com.example.appaskuseranswer.dialog.AlarmDialog\r\nimport com.example.appaskuseranswer.dialog.RequestDialog\r\n\r\n\r\nclass SettingFragment : DialogFragment() {\r\n\r\n    private val dialog = NoticeDialog()\r\n\r\n    override fun onCreateView(\r\n        inflater: LayoutInflater,\r\n        container: ViewGroup?,\r\n        savedInstanceState: Bundle?\r\n    ): View? {\r\n\r\n        var view = LayoutInflater.from(activity).inflate(R.layout.fragment_setting, container, false)\r\n        return view\r\n\r\n\r\n\r\n    }\r\n\r\n    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {\r\n        super.onViewCreated(view, savedInstanceState)\r\n\r\n\r\n        \r\n        //목록에서 공지사항버튼(btn_setting_notice)을 누르면 팝업\r\n        view.findViewById<Button>(R.id.btn_setting_notice).setOnClickListener {\r\n            val noticeDialog = NoticeDialog()\r\n            noticeDialog.show(\r\n                parentFragmentManager, \"Notice\"\r\n            )\r\n        }\r\n\r\n        //목록에서 원하는 질문 의뢰하기 버튼(btn_setting_request)을 누르면 팝업\r\n        view.findViewById<Button>(R.id.btn_setting_request).setOnClickListener {\r\n            val requestDialog = RequestDialog()\r\n            requestDialog.show(\r\n                parentFragmentManager, \"Request\"\r\n            )\r\n        }\r\n\r\n        //목록에서 알림설정 버튼(btn_setting_alarm)을 누르면 팝업\r\n        view.findViewById<Button>(R.id.btn_setting_alarm).setOnClickListener {\r\n            val alarmDialog = AlarmDialog()\r\n            alarmDialog.show(\r\n                parentFragmentManager, \"Alarm\"\r\n            )\r\n        }\r\n\r\n\r\n    }\r\n\r\n        }////\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/appaskuseranswer/fragment/SettingFragment.kt b/app/src/main/java/com/example/appaskuseranswer/fragment/SettingFragment.kt
+--- a/app/src/main/java/com/example/appaskuseranswer/fragment/SettingFragment.kt	(revision 4e0dcabc87d839c2936dd4253260bc0decc58035)
++++ b/app/src/main/java/com/example/appaskuseranswer/fragment/SettingFragment.kt	(date 1642861958859)
+@@ -35,7 +35,7 @@
+         super.onViewCreated(view, savedInstanceState)
+ 
+ 
+-        
++
+         //목록에서 공지사항버튼(btn_setting_notice)을 누르면 팝업
+         view.findViewById<Button>(R.id.btn_setting_notice).setOnClickListener {
+             val noticeDialog = NoticeDialog()
