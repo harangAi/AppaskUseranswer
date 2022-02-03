@@ -7,8 +7,8 @@
     <data>
 
         <variable
-            name="myViewModel"
-            type="com.example.appaskuseranswer.db.NoticeViewModel" />
+            name="notice"
+            type="com.example.appaskuseranswer.db.model.Notice" />
     </data>
 
 

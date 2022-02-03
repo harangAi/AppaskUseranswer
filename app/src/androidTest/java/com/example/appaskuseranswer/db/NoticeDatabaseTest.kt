@@ -1,16 +1,13 @@
 package com.example.appaskuseranswer.db
 
-import android.util.Log
 import androidx.room.Room
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import kotlinx.coroutines.runBlocking
+import com.example.appaskuseranswer.db.dao.NoticeDao
 import org.junit.After
 import org.junit.Before
-import org.junit.Test
 import org.junit.runner.RunWith
 import java.io.IOException
-import org.junit.Assert.assertEquals
 
 
 @RunWith(AndroidJUnit4::class)

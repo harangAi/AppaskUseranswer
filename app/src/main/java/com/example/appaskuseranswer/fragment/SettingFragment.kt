@@ -12,11 +12,12 @@ import com.example.appaskuseranswer.R
 import com.example.appaskuseranswer.db.NoticeDatabase
 import com.example.appaskuseranswer.dialog.AlarmDialog
 import com.example.appaskuseranswer.dialog.RequestDialog
+import kotlinx.android.synthetic.main.setting_notice_dialog.*
 
 
 class SettingFragment : DialogFragment() {
 
-    private val dialog = NoticeDialog()
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -25,11 +26,8 @@ class SettingFragment : DialogFragment() {
     ): View? {
 
 
-
         var view = LayoutInflater.from(activity).inflate(R.layout.fragment_setting, container, false)
         return view
-
-
 
     }
 
@@ -39,11 +37,14 @@ class SettingFragment : DialogFragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
+
+
         //목록에서 공지사항버튼(btn_setting_notice)을 누르면 팝업
         view.findViewById<Button>(R.id.btn_setting_notice).setOnClickListener {
             val noticeDialog = NoticeDialog()
             noticeDialog.show(
                 parentFragmentManager, "Notice"
+
             )
         }
 
