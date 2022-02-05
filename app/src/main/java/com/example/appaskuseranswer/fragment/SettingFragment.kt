@@ -6,13 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.DialogFragment
-import androidx.room.Room
 import com.example.appaskuseranswer.dialog.NoticeDialog
 import com.example.appaskuseranswer.R
-import com.example.appaskuseranswer.db.NoticeDatabase
+import com.example.appaskuseranswer.db.Notice
 import com.example.appaskuseranswer.dialog.AlarmDialog
 import com.example.appaskuseranswer.dialog.RequestDialog
-import kotlinx.android.synthetic.main.setting_notice_dialog.*
+import io.realm.Realm
 
 
 class SettingFragment : DialogFragment() {
@@ -41,11 +40,13 @@ class SettingFragment : DialogFragment() {
 
         //목록에서 공지사항버튼(btn_setting_notice)을 누르면 팝업
         view.findViewById<Button>(R.id.btn_setting_notice).setOnClickListener {
-            val noticeDialog = NoticeDialog()
+            /*val noticeDialog = NoticeDialog()
             noticeDialog.show(
                 parentFragmentManager, "Notice"
 
-            )
+            )*/
+           //데이터를 가져오기
+            val realm = Realm.getDefaultInstance()
         }
 
         //목록에서 원하는 질문 의뢰하기 버튼(btn_setting_request)을 누르면 팝업
