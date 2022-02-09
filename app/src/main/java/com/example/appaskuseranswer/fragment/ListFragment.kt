@@ -17,4 +17,19 @@ class ListFragment : Fragment() {
         var view = LayoutInflater.from(activity).inflate(R.layout.fragment_list, container, false)
         return view
     }
+<<<<<<< HEAD:app/src/main/java/com/example/appaskuseranswer/fragment/ListFragment.kt
 }
+=======
+}
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> parent of 328bef9 (AlertDialog 사용해보기):app/src/main/java/com/example/appaskuseranswer/navigation/SettingFragment.kt
