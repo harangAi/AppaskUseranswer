@@ -1,9 +1,8 @@
-package com.example.appaskuseranswer.db
+package com.example.appaskuseranswer.data
 
 import androidx.room.Room
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import com.example.appaskuseranswer.db.dao.NoticeDao
 import org.junit.After
 import org.junit.Before
 import org.junit.runner.RunWith

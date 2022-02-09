@@ -6,16 +6,15 @@
 
     <data>
 
-        <variable
-            name="notice"
-            type="com.example.appaskuseranswer.db.model.Notice" />
     </data>
 
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/notice_container"
+        >
 
 
         <LinearLayout
