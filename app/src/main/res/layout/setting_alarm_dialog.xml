@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_dialog_borderline"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="340dp"
+        android:orientation="vertical"
+        android:background="@drawable/setting_dialog_borderline"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+        <!-- 오전   -->
+        <Switch
+            android:id="@+id/alarm_am_switch"
+            android:layout_marginLeft="15dp"
+            android:padding="15dp"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            android:text="오전"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:track="@drawable/alarm_dialog_switch_track_selector"
+            android:thumb="@drawable/alarm_dialog_switch_thumb"
+            android:switchMinWidth="0dp"
+            android:textOff=""
+            android:textOn=""
+            android:thumbTextPadding="15dp"
+
+            />
+
+        <!-- 오후   -->
+            <Switch
+                android:id="@+id/alarm_pm_switch"
+                android:layout_marginLeft="15dp"
+                android:padding="15dp"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml"
+                android:text="오후"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:track="@drawable/alarm_dialog_switch_track_selector"
+                android:thumb="@drawable/alarm_dialog_switch_thumb"
+                android:switchMinWidth="0dp"
+                android:textOff=""
+                android:textOn=""
+                android:thumbTextPadding="15dp"
+                />
+
+        <!-- 저녁   -->
+            <Switch
+                android:id="@+id/alarm_night_switch"
+                android:layout_marginLeft="15dp"
+                android:padding="15dp"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml"
+                android:text="저녁"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:track="@drawable/alarm_dialog_switch_track_selector"
+                android:thumb="@drawable/alarm_dialog_switch_thumb"
+                android:switchMinWidth="0dp"
+                android:textOff=""
+                android:textOn=""
+                android:thumbTextPadding="15dp"
+                />
+
+        <!-- 심야   -->
+            <Switch
+                android:id="@+id/alarm_late_night_switch"
+                android:layout_marginLeft="15dp"
+                android:padding="15dp"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml"
+                android:text="심야"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:track="@drawable/alarm_dialog_switch_track_selector"
+                android:thumb="@drawable/alarm_dialog_switch_thumb"
+                android:switchMinWidth="0dp"
+                android:textOff=""
+                android:textOn=""
+                android:thumbTextPadding="15dp"
+                />
+
+        </LinearLayout>
+
+            <!-- 확인   -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/setting_alarm_dialog_ok_btn"
+            android:layout_width="320dp"
+            android:layout_height="70dp"
+            android:background="@drawable/setting_dialog_borderline"
+            android:gravity="center"
+            android:paddingVertical="16dp"
+            android:text="확인"
+            android:textColor="#44558F"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:focusable="true"
+            />
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

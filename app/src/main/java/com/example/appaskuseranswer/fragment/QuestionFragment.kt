@@ -1,4 +1,4 @@
-package com.example.appaskuseranswer.navigation
+package com.example.appaskuseranswer.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
